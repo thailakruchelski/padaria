@@ -1,0 +1,159 @@
+* * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    background-color: #f8f5f2;
+    color: #3e2f2f;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 10%;
+    background-color: #2b1d1d;
+}
+
+.logo {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color: #d4af37;
+    font-size: 22px;
+    font-weight: bold;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+nav a {
+    text-decoration: none;
+    color: white;
+    transition: 0.3s;
+}
+
+nav a:hover {
+    color: #d4af37;
+}
+
+.hero img {
+    width: 100%;
+    height: 400px;
+    object-fit: cover;
+}
+
+.produtos {
+    padding: 60px 10%;
+    text-align: center;
+}
+
+.produtos h2 {
+    margin-bottom: 40px;
+    font-size: 28px;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+}
+
+.card {
+    background: white;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+    transition: 0.3s;
+}
+
+.card:hover {
+    transform: translateY(-8px);
+}
+
+.card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+.card h3 {
+    margin: 15px 0 10px;
+}
+
+.card p {
+    padding: 0 15px 20px;
+}
+
+footer {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    background-color: #2b1d1d;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    margin-top: 40px;
+}
+
+@media (max-width: 900px) {
+    .grid {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+@media (max-width: 600px) {
+    header {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+main {
+    padding: 60px 10%;
+}
+
+.categoria {
+    margin-bottom: 60px;
+}
+
+h2 {
+    font-size: 26px;
+    margin-bottom: 25px;
+    padding-bottom: 10px;
+}
+
+.duas-colunas {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 50px;
+}
+
+
+
+article h3 {
+    margin-bottom: 8px;
+}
+
+article p {
+    margin-bottom: 10px;
+    font-size: 14px;
+}
+
+@media (max-width: 900px) {
+
+    .lista {
+        grid-template-columns: 1fr;
+    }
+
+    .duas-colunas {
+        grid-template-columns: 1fr;
+    }
+
+}
